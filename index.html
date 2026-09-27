@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laksh — technology, AI, web development, projects and practical ideas.">
+  <meta name="theme-color" content="#17142b">
+  <title>Laksh — Digital Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="announcement">
+    <div class="container announcement-inner">
+      <span>●</span> NEW: AI + WEB NOTES EVERY WEEK
+      <a href="#blog">Explore the journal →</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo" aria-label="Laksh home">laksh<span>.</span></a>
+      <nav class="nav" id="navLinks" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#blog">Blog</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#application">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="social-pill" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a class="social-pill linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> PERSONAL DIGITAL JOURNAL</div>
+          <h1>Ideas worth<br><em>building.</em></h1>
+          <p class="hero-lead">A cleaner space for practical notes on artificial intelligence, web development, technology, experiments and lessons learned while building.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#blog">Read the journal <span>↗</span></a>
+            <a class="btn btn-ghost" href="#projects">View projects</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>06+</strong><span>Published notes</span></div>
+            <div><strong>04</strong><span>Core topics</span></div>
+            <div><strong>∞</strong><span>Ideas in progress</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="visual-grid"></div>
+          <div class="floating-card card-main">
+            <div class="mini-window"><i></i><i></i><i></i><span>build.log</span></div>
+            <div class="terminal-line"><b>01</b><span>learn()</span><strong>✓</strong></div>
+            <div class="terminal-line"><b>02</b><span>build()</span><strong>✓</strong></div>
+            <div class="terminal-line"><b>03</b><span>share()</span><strong>✓</strong></div>
+            <div class="terminal-line active"><b>04</b><span>launch()</span><strong>↗</strong></div>
+          </div>
+          <div class="floating-card card-note"><small>NOW EXPLORING</small><strong>AI × Product</strong><span>Turning complex ideas into useful interfaces.</span></div>
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="topic-strip">
+      <div class="container topic-strip-inner">
+        <span>AI</span><i>•</i><span>WEB DEVELOPMENT</span><i>•</i><span>PRODUCTIVITY</span><i>•</i><span>PROJECTS</span><i>•</i><span>BUILD IN PUBLIC</span>
+      </div>
+    </div>
+
+    <!-- BLOG -->
+    <section class="blog section" id="blog">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span></span> THE JOURNAL</div>
+            <h2>Latest <em>stories.</em></h2>
+          </div>
+          <p>Short, practical articles designed to make technology easier to understand and ideas easier to execute.</p>
+        </div>
+
+        <div class="blog-toolbar">
+          <div class="filter-tabs" role="tablist" aria-label="Filter stories">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="ai">AI</button>
+            <button class="filter" data-filter="web">Web</button>
+            <button class="filter" data-filter="code">Code</button>
+            <button class="filter" data-filter="tech">Tech</button>
+          </div>
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="blogSearch" type="search" placeholder="Search articles..." aria-label="Search articles">
+          </label>
+        </div>
+
+        <div class="featured-post">
+          <div class="featured-image image-ai"><span class="image-badge">FEATURED</span><div class="image-code">model.train()<br>→ evaluate()<br>→ improve()</div></div>
+          <div class="featured-content">
+            <div class="post-meta"><span>AI</span><b>6 MIN READ</b><time>•</time><span>September 2026</span></div>
+            <h3>Getting Started with Machine Learning in Python</h3>
+            <p>From clean data to a useful first model: a beginner-friendly workflow that focuses on the concepts that matter before the complexity.</p>
+            <button class="read-article featured-read" data-article="1">Read full story <span>↗</span></button>
+          </div>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+          <article class="post-card" data-category="web" data-title="Modern Web Development">
+            <div class="post-image image-web"><span>HTML / CSS / JS</span></div>
+            <div class="post-body"><div class="post-meta"><span>WEB</span><b>5 MIN</b></div><h3>Modern Web Development</h3><p>Build interfaces that are responsive, accessible, fast and easy to maintain.</p><button class="read-article" data-article="2">Read story →</button></div>
+          </article>
+
+          <article class="post-card" data-category="code" data-title="JavaScript Projects That Actually Teach You Something">
+            <div class="post-image image-code-art"><span>JS / PROJECTS</span></div>
+            <div class="post-body"><div class="post-meta"><span>CODE</span><b>4 MIN</b></div><h3>JavaScript Projects That Actually Teach You Something</h3><p>Small builds that teach DOM manipulation, APIs, state, validation and real problem solving.</p><button class="read-article" data-article="3">Read story →</button></div>
+          </article>
+
+          <article class="post-card" data-category="tech" data-title="Inside the Tools We Use">
+            <div class="post-image image-tech"><span>TOOLS / WORKFLOW</span></div>
+            <div class="post-body"><div class="post-meta"><span>TECH</span><b>4 MIN</b></div><h3>Inside the Tools We Use</h3><p>Why editors, Git, browser tools and package managers matter in everyday development.</p><button class="read-article" data-article="4">Read story →</button></div>
+          </article>
+
+          <article class="post-card" data-category="ai" data-title="Artificial Intelligence in Everyday Products">
+            <div class="post-image image-ai2"><span>AI / PRODUCTS</span></div>
+            <div class="post-body"><div class="post-meta"><span>AI</span><b>5 MIN</b></div><h3>Artificial Intelligence in Everyday Products</h3><p>Where intelligent features meet ordinary workflows — and what good AI product design looks like.</p><button class="read-article" data-article="5">Read story →</button></div>
+          </article>
+
+          <article class="post-card" data-category="code" data-title="From Idea to Finished Project">
+            <div class="post-image image-build"><span>BUILD / SHIP</span></div>
+            <div class="post-body"><div class="post-meta"><span>BUILD</span><b>4 MIN</b></div><h3>From Idea to Finished Project</h3><p>A simple process for turning a rough concept into a tested, published project.</p><button class="read-article" data-article="6">Read story →</button></div>
+          </article>
+
+          <div class="no-results" id="noResults">No stories match your search.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <div><div class="eyebrow"><span></span> SELECTED WORK</div><h2>Things I <em>build.</em></h2></div>
+          <p>Experiments become useful when they are shipped. Here are a few formats this journal explores.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-large"><div class="project-number">01</div><span>WEB / UI</span><h3>Digital Journal</h3><p>A responsive editorial system for publishing ideas, notes and experiments.</p><a href="#blog">Explore →</a></article>
+          <article class="project-card project-purple"><div class="project-number">02</div><span>AI / DATA</span><h3>Prediction Lab</h3><p>JSON-powered classification demo with history and confidence visualization.</p><a href="#prediction-lab">Open lab →</a></article>
+          <article class="project-card project-green"><div class="project-number">03</div><span>JAVASCRIPT</span><h3>Interactive Tools</h3><p>Small browser projects focused on APIs, DOM, forms and useful micro-interactions.</p><a href="#application">Learn more →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREDICTION LAB -->
+    <section class="prediction-lab section" id="prediction-lab">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span></span> INTERACTIVE LAB</div><h2>AI results,<br><em>on screen.</em></h2></div>
+          <p>Try a product description. The demo loads prediction rules from JSON and updates the result, history table and confidence chart.</p>
+        </div>
+        <div class="prediction-layout">
+          <form class="prediction-form" id="predictionForm">
+            <p class="field-label">TRY A PREDICTION</p>
+            <label for="predictionInput">Describe a product</label>
+            <input id="predictionInput" type="text" placeholder="e.g. smart watch with health tracking" required>
+            <button class="btn btn-primary" type="submit">Run prediction <span>↗</span></button>
+            <p class="prediction-note" id="predictionStatus">Loading prediction data…</p>
+          </form>
+          <div class="prediction-result" aria-live="polite">
+            <p class="field-label">LATEST RESULT</p>
+            <strong id="predictionLabel">—</strong>
+            <div class="confidence-row"><span>Confidence</span><b id="predictionConfidence">—</b></div>
+            <div class="confidence-bar"><span id="confidenceBar"></span></div>
+            <p id="predictionExplanation">Run a prediction to display the JSON result.</p>
+          </div>
+        </div>
+        <div class="prediction-dashboard">
+          <div class="dashboard-card">
+            <div class="dashboard-head"><div><p class="field-label">HISTORY</p><h3>Prediction history</h3></div><button type="button" class="clear-history" id="clearPredictions">Clear all</button></div>
+            <div class="table-scroll"><table class="prediction-table"><thead><tr><th>INPUT</th><th>RESULT</th><th>CONFIDENCE</th><th></th></tr></thead><tbody id="predictionTableBody"><tr><td colspan="4" class="empty-state">No predictions yet.</td></tr></tbody></table></div>
+          </div>
+          <div class="dashboard-card chart-card"><div class="dashboard-head"><div><p class="field-label">VISUAL OUTPUT</p><h3>Confidence</h3></div></div><div class="chart-box"><canvas id="predictionChart" aria-label="Prediction confidence chart"></canvas></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-profile">
+          <div class="avatar">L</div>
+          <span class="status"><i></i> BUILDING & LEARNING</span>
+          <h3>Curious by default.<br>Always building.</h3>
+          <div class="profile-rule"></div>
+          <p>Technology • AI • Web • Ideas</p>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow"><span></span> ABOUT THIS SPACE</div>
+          <h2>Learn it.<br><em>Build it.</em><br>Share it.</h2>
+          <p>This website is a personal digital journal for documenting projects, coding experiments, useful discoveries and lessons from building on the web.</p>
+          <div class="about-points"><div><b>01</b><span>Practical notes over theory overload.</span></div><div><b>02</b><span>Small experiments that become real projects.</span></div><div><b>03</b><span>Clear explanations anyone can follow.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="application section" id="application">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="eyebrow"><span></span> LET'S CONNECT</div>
+          <h2>Have an idea?<br><em>Let's build.</em></h2>
+          <p>Use the form to share your details and certificate. The current front-end validates the information and file before showing a success message.</p>
+          <div class="contact-links"><a href="https://github.com/" target="_blank">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a></div>
+        </div>
+        <form class="application-form" id="applicationForm" novalidate>
+          <div class="field"><label for="name">Full name <span>*</span></label><input id="name" type="text" autocomplete="name"><small class="error" id="nameError"></small></div>
+          <div class="field"><label for="email">Email ID <span>*</span></label><input id="email" type="email" autocomplete="email"><small class="error" id="emailError"></small></div>
+          <div class="field"><label for="skill">Primary skill <span>*</span></label><input id="skill" type="text"><small class="error" id="skillError"></small></div>
+          <div class="field"><label for="experience">Experience (years) <span>*</span></label><input id="experience" type="number" min="0" max="50"><small class="error" id="experienceError"></small></div>
+          <div class="field full"><label for="certificate">Certificate <span>*</span></label><input id="certificate" type="file" accept=".pdf,.jpg,.jpeg,.png"><small class="hint">PDF, JPG, JPEG or PNG · max 5 MB</small><small class="error" id="certificateError"></small></div>
+          <button class="btn btn-primary" type="submit">Validate application <span>↗</span></button>
+          <div class="success-message" id="successMessage"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ARTICLE MODAL -->
+    <div class="article-modal" id="articleModal" aria-hidden="true">
+      <div class="article-modal-backdrop" data-close-article></div>
+      <article class="article-modal-content" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle">
+        <button class="article-close" id="closeArticle" aria-label="Close article">&times;</button>
+        <p class="eyebrow" id="articleModalTag">ARTICLE</p>
+        <h2 id="articleModalTitle">Article title</h2>
+        <div class="modal-divider"></div>
+        <div id="articleModalBody"></div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div><a class="footer-logo" href="#home">laksh<span>.</span></a><p>Ideas, experiments and useful things from the web.</p></div>
+      <div class="footer-nav"><a href="#blog">Blog</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#application">Contact</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Laksh Digital Journal</span><span>Built with HTML • CSS • JavaScript</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

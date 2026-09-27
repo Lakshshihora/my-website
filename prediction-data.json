@@ -1,0 +1,10 @@
+{
+  "predictions": [
+    {"keyword":"smart watch","label":"Wearable Technology","confidence":92,"explanation":"The description contains terms commonly associated with wearable devices."},
+    {"keyword":"laptop","label":"Computing Device","confidence":95,"explanation":"The description matches a personal computing product."},
+    {"keyword":"camera","label":"Imaging Device","confidence":89,"explanation":"The description is associated with digital imaging hardware."},
+    {"keyword":"headphones","label":"Audio Device","confidence":91,"explanation":"The description matches a personal audio product."},
+    {"keyword":"phone","label":"Mobile Device","confidence":94,"explanation":"The description matches a smartphone or mobile device."},
+    {"keyword":"default","label":"General Technology","confidence":76,"explanation":"No specific keyword matched, so the general technology category was returned."}
+  ]
+}
